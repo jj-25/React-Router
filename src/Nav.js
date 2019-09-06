@@ -2,37 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 import './App.css';
 import { Link } from "react-router-dom";
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: ${props=>props.primary?"white":"palevioletred"};
-  h2{
-    color:#ff0;
+const S_Nav = styled.nav`
+	width: 100%;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// z-index: 100;
+  background:-webkit-linear-gradient(135deg,rgba(50,50,50,0.7),rgba(10,10,10, 0.5)); 
+  padding:10px 0;
+  ul{
+    width: 80%;
+    margin:auto;
+    // font-size: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    a,p{
+      color:#fff;
+      text-decoration:none;
+    }
   }
-  // &:nth-child(2){color:#f00;}
-`;
+`
 function Nav() {
   return (
-    // <nav>
-    //   <h3>logo</h3>
-    //   <ul className="nav-links">
-    //     <Link to="/about">
-    //       <li>About</li>
-    //     </Link>
-    //     <Link to ="/shop">
-    //       <li>Shop</li>
-    //     </Link>
-    //   </ul>
-    // </nav>
-    <nav className="navbar">
-      <Title>Hi it is css component
-        <h2>it is h2</h2>
-      </Title>
-      <Title primary>it is title2</Title>
-      <Title>it is title3</Title>
+    <S_Nav>
       <ul>
         <div className="logo">
-          <a href="index.html" alt="Depth_logo"><img src="logo.png"/></a>
+          <Link to="/"><img src="logo.png"/></Link>
         </div>
         <Link to="/drinks">
           <li>DRINK</li>
@@ -48,7 +44,7 @@ function Nav() {
         </Link>
         <li><p className="Title">17:00 ~ 02:00 Monday Closed</p></li>
       </ul>
-    </nav>
+    </S_Nav>
   );
 }
 

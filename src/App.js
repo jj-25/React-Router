@@ -198,7 +198,7 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  *{ color:#eee; }
+  *{ color:#eee; box-sizing:border-box;}
   img{ width:100%; vertical-align: bottom;}
   a{ text-decoration: none; }
   p{ letter-spacing: 1px;}

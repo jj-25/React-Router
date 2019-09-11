@@ -21,6 +21,7 @@ const S_Slogan = styled.div`
   background: -webkit-linear-gradient(90deg,yellow,red);
   z-index: 1;
   opacity: 0.8;
+  border-radius: 3px;
   div{
     position: absolute;
     width: 200px;
@@ -36,6 +37,7 @@ const S_Slogan = styled.div`
     margin-right: -100px;
     margin-bottom: -25px;
     opacity: 1;
+    border-radius: 3px;
     h1{color:#fff;}
   }
 `
